@@ -1,0 +1,25 @@
+[dotenv@17.2.3] injecting env (4) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+HRE Keys: [
+  'config',
+  'hardhatArguments',
+  'tasks',
+  'scopes',
+  'userConfig',
+  'version',
+  'run',
+  'artifacts',
+  'network',
+  '_environmentExtenders',
+  'ethers',
+  'ignition',
+  '__hhgrec'
+]
+Deploying MessageBoard...
+DEPLOYMENT ERROR: HardhatError: HH700: Artifact for contract "MessageBoard" not found. 
+    at Artifacts._handleWrongArtifactForContractName (C:\Users\Marvelbyte\Desktop\web3-message-board\node_modules\hardhat\src\internal\artifacts.ts:721:11)
+    at Artifacts._getArtifactPathFromFiles (C:\Users\Marvelbyte\Desktop\web3-message-board\node_modules\hardhat\src\internal\artifacts.ts:852:19)
+    at Artifacts._getArtifactPath (C:\Users\Marvelbyte\Desktop\web3-message-board\node_modules\hardhat\src\internal\artifacts.ts:516:21)
+    at Artifacts.readArtifact (C:\Users\Marvelbyte\Desktop\web3-message-board\node_modules\hardhat\src\internal\artifacts.ts:71:26)
+    at getContractFactory (C:\Users\Marvelbyte\Desktop\web3-message-board\node_modules\@nomicfoundation\hardhat-ethers\src\internal\helpers.ts:120:22)
+    at main (C:\Users\Marvelbyte\Desktop\web3-message-board\scripts\deploy.cjs:10:24)

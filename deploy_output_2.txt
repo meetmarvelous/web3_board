@@ -1,0 +1,19 @@
+[dotenv@17.2.3] injecting env (4) from .env -- tip: ⚙️  override existing env vars with { override: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+HRE Keys: [
+  'config',
+  'hardhatArguments',
+  'tasks',
+  'scopes',
+  'userConfig',
+  'version',
+  'run',
+  'artifacts',
+  'network',
+  '_environmentExtenders',
+  'ethers',
+  'ignition',
+  '__hhgrec'
+]
+Deploying MessageBoard...
+MessageBoard deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3

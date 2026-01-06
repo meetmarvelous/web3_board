@@ -1,0 +1,19 @@
+[dotenv@17.2.3] injecting env (4) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+HRE Keys: [
+  'config',
+  'hardhatArguments',
+  'tasks',
+  'scopes',
+  'userConfig',
+  'version',
+  'run',
+  'artifacts',
+  'network',
+  '_environmentExtenders',
+  'ethers',
+  'ignition',
+  '__hhgrec'
+]
+Deploying MessageBoard...
+MessageBoard deployed to: 0xE46f8c1c31fabE37EF94Fd55CD9FdAFC63f58ee5

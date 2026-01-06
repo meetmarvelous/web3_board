@@ -1,0 +1,19 @@
+[dotenv@17.2.3] injecting env (4) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+HRE Keys: [
+  'config',
+  'hardhatArguments',
+  'tasks',
+  'scopes',
+  'userConfig',
+  'version',
+  'run',
+  'artifacts',
+  'network',
+  '_environmentExtenders',
+  'ethers',
+  'ignition',
+  '__hhgrec'
+]
+Deploying MessageBoard...
+MessageBoard deployed to: 0xA2E506118CEFEDc7361f5604dd5Ee189b4f642d1

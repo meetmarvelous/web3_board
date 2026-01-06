@@ -1,0 +1,5 @@
+{
+  "name": "Web3 Message Board",
+  "description": "A decentralized message board where users can post messages to the blockchain. Features AI-powered message suggestions and a clean, modern interface.",
+  "requestFramePermissions": []
+}
