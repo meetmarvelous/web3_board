@@ -46,9 +46,9 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <section className="bg-slate-900/50 p-8 rounded-3xl border border-slate-800 space-y-6">
+        <section className="bg-slate-900/50 p-6 md:p-8 rounded-3xl border border-slate-800 space-y-6">
           <h2 className="text-2xl font-bold text-white">Technology Stack</h2>
-          <ul className="grid grid-cols-2 gap-4 text-slate-400">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-400">
             <li className="flex items-center space-x-2">
               <span className="w-2 h-2 bg-indigo-500 rounded-full" />
               <span>React & Vite</span>

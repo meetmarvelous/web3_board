@@ -317,7 +317,7 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center p-4 md:p-8">
       {/* Header */}
-      <header className="w-full max-w-4xl flex justify-between items-center mb-8 animate-in fade-in slide-in-from-top duration-700">
+      <header className="w-full max-w-4xl flex flex-col md:flex-row justify-between items-center mb-8 gap-4 animate-in fade-in slide-in-from-top duration-700">
         <div className="flex items-center space-x-3">
           <div className="bg-indigo-600 p-2 rounded-xl shadow-lg shadow-indigo-500/20">
             <ChatBubbleLeftRightIcon className="w-8 h-8 text-white" />
@@ -350,6 +350,7 @@ const Home: React.FC = () => {
                }}
                className="p-1 hover:bg-slate-700 rounded-full transition-colors text-slate-400 hover:text-red-400"
                title="Disconnect"
+               aria-label="Disconnect Wallet"
              >
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
@@ -373,16 +374,16 @@ const Home: React.FC = () => {
       </header>
 
       {/* Navigation Tabs */}
-      <div className="flex space-x-4 mb-8 bg-slate-800/50 p-1 rounded-xl">
+      <div className="flex w-full max-w-2xl space-x-2 md:space-x-4 mb-8 bg-slate-800/50 p-1 rounded-xl">
         <button
           onClick={() => setActiveTab('public')}
-          className={`px-6 py-2 rounded-lg font-medium transition-all ${activeTab === 'public' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-400 hover:text-white'}`}
+          className={`flex-1 px-4 md:px-6 py-2 rounded-lg font-medium transition-all text-sm md:text-base ${activeTab === 'public' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-400 hover:text-white'}`}
         >
           Public Board
         </button>
         <button
           onClick={() => setActiveTab('inbox')}
-          className={`px-6 py-2 rounded-lg font-medium transition-all ${activeTab === 'inbox' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-400 hover:text-white'}`}
+          className={`flex-1 px-4 md:px-6 py-2 rounded-lg font-medium transition-all text-sm md:text-base ${activeTab === 'inbox' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-400 hover:text-white'}`}
         >
           Secret Inbox
         </button>
@@ -456,6 +457,7 @@ const Home: React.FC = () => {
                   onClick={fetchMessages}
                   disabled={isLoading}
                   className="text-slate-400 hover:text-indigo-400 transition-colors"
+                  aria-label="Refresh Messages"
                  >
                    <ArrowPathIcon className={`w-5 h-5 ${isLoading ? 'animate-spin' : ''}`} />
                  </button>
@@ -470,7 +472,7 @@ const Home: React.FC = () => {
                 messages.map((msg, i) => (
                   <div 
                     key={`${msg.sender}-${i}`}
-                    className="group relative bg-slate-800/30 border border-slate-700/40 rounded-3xl p-6 transition-all hover:bg-slate-800/50 hover:border-indigo-500/20 hover:shadow-xl hover:shadow-indigo-500/5 animate-in slide-in-from-bottom duration-500"
+                    className="group relative bg-slate-800/30 border border-slate-700/40 rounded-3xl p-4 md:p-6 transition-all hover:bg-slate-800/50 hover:border-indigo-500/20 hover:shadow-xl hover:shadow-indigo-500/5 animate-in slide-in-from-bottom duration-500"
                     style={{ animationDelay: `${i * 50}ms` }}
                   >
                     <div className="flex justify-between items-start mb-4">
